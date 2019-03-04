@@ -1,0 +1,41 @@
+<div>
+
+    <br><br><br>
+    <mat-form-field class="example-full-width">
+      <label>Nombre:
+       <input required matInput [(ngModel)]="miTwitt.nombre">
+      </label> 
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <label>Apellido:
+        <input required matInput [(ngModel)]="miTwitt.apellido">
+      </label>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+    <label>Usuario:
+      <input required matInput [(ngModel)]="miTwitt.usuario">
+    </label>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+    <label>Twitt:
+      <textarea required matInput  [(ngModel)]="miTwitt.twitt"></textarea>
+    </label>
+    </mat-form-field>
+  
+  <br><br><br>
+  <div class="example-button-row">
+    <button  mat-button style="background-color: rgb(29, 161, 242);">Registrar</button>
+  </div>
+  
+  <h2>Nombre: {{miTwitt.nombre}}</h2>
+  <h2>Apellido: {{miTwitt.apellido}}</h2>
+  <h2>Usuario: {{miTwitt.usuario}}</h2>
+  <h2>Twitt: {{miTwitt.twitt}}</h2>
+
+
+
+  
+</div>
